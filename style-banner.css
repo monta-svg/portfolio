@@ -1,0 +1,101 @@
+/* 全体スタイル */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background: #f5f5f5;
+}
+
+/* バナー全体 */
+.banner {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* バナーコンテンツ */
+.banner-content {
+    z-index: 1;
+    max-width: 800px;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* スキルリスト */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+/* ボタン */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    background: #fff;
+    color: #ff4500;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffe4b5;
+    transform: scale(1.1);
+}
+
+/* アニメーション */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* ポートフォリオセクション */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.divice-container{
+    display: flex;
+}
