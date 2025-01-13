@@ -1,0 +1,38 @@
+/* タイポグラフィ中心 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.typography h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.typography h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.typography .button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.typography .button:hover {
+    background: #2980b9;
+}

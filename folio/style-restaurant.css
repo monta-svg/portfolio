@@ -1,0 +1,179 @@
+/* 全体スタイル */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background: #fff8e1;
+
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* ヒーローセクション */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(211, 84, 0, 0.1), rgba(231, 76, 60, 0.1)), url('img/31218159_l.jpg');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+}
+.hero-content::after{
+    content: '';
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(2px);
+    opacity: 0.1;
+    box-shadow: 10px gray ;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button.primary {
+    background: #e67e22;
+    color: white;
+}
+
+.cta-button.secondary {
+    background: #e74c3c;
+    color: white;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* メニューセクション */
+.menu-section {
+    padding: 50px 20px;
+    background: #fff8e1;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 15px;
+    width: 350px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 20px;
+}
+
+.menu-info h3 {
+    color: #e74c3c;
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* 予約セクション */
+.reservation-section {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7) url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
+    color: white;
+    text-align: center;
+}
+
+.reservation-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.reservation-card form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.reservation-card form input {
+    max-width:100% ;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    background: #d35400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魅力的なココナラバナー</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 全体設定 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e3f2fd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* バナー */
+        .banner {
+            position: relative;
+            width: 1128px;
+            height: 600px;
+            background: linear-gradient(145deg, #ffffff, #f0f4f8);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        /* ノートPCエリア */
+        .laptop-container {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .laptop {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            background: #333;
+            border-radius: 10px;
+            border: 10px solid #555; /* ベゼル部分 */
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .laptop-screen {
+            position: relative;
+            width: 100%;
+            height: 70%;
+            background: linear-gradient(145deg, #0078D7, #64B5F6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .laptop-keyboard {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            bottom: 0;
+            background: #444;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 4px;
+            padding: 8px;
+        }
+
+        .laptop-keyboard div {
+            background: #555;
+            border-radius: 2px;
+            height: 8px;
+        }
+
+        /* 吹き出し */
+        .feature-container {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .feature {
+            background: linear-gradient(145deg, #ffffff, #f9fbe7);
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:nth-child(1) {
+            background: linear-gradient(145deg, #4CAF50, #81C784);
+            color: #fff;
+        }
+
+        .feature:nth-child(2) {
+            background: linear-gradient(145deg, #FFC107, #FFD54F);
+            color: #fff;
+        }
+
+        .feature:nth-child(3) {
+            background: linear-gradient(145deg, #2196F3, #64B5F6);
+            color: #fff;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* テキストエリア */
+        .text-area {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+            padding-right: 20px;
+        }
+
+        .text-area h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #0078D7;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-area p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .info-box {
+            background: linear-gradient(145deg, #f9fbe7, #ffffff);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-box ul li {
+            font-size: 1.2em;
+            color: #333;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info-box ul li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- テキストエリア -->
+        <div class="text-area">
+            <h1>Web制作はお任せ！</h1>
+            <p>初心者も安心の丁寧なサポート。</p>
+            <div class="info-box">
+                <ul>
+                    <li>SEO最適化対応</li>
+                    <li>モバイルフレンドリー</li>
+                    <li>モダンで洗練されたデザイン</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ノートPCエリア -->
+        <div class="laptop-container">
+            <div class="laptop">
+                <div class="laptop-screen">Web制作ならお任せ！</div>
+                <div class="laptop-keyboard">
+                    <div></div><div></div><div></div><div></div><div></div>
+                    <div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+
+            <!-- 吹き出し -->
+            <div class="feature-container">
+                <div class="feature">¥10,000〜</div>
+                <div class="feature">初心者歓迎</div>
+                <div class="feature">迅速対応</div>
+            </div>
+        </div>
+    </div>
+    <div class="divice-container">
+        <div class="device desktop">
+            <div class="monitor">
+              <div class="screen">デスクトップ画面</div>
+            </div>
+            <div class="stand"></div>
+            <div class="keyboard"></div>
+          </div>
+          
+          <style>
+          .desktop {
+              width: 500px;
+              position: relative;
+          }
+          
+          .monitor {
+              width: 100%;
+              height: 300px;
+              background: #333;
+              border: 10px solid #555;
+              border-radius: 10px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+              position: relative;
+          }
+          
+          .monitor .screen {
+              width: calc(100% - 20px);
+              height: calc(100% - 20px);
+              background: linear-gradient(145deg, #0078D7, #64B5F6);
+              margin: 10px auto;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1.5em;
+              font-weight: bold;
+              text-align: center;
+          }
+          
+          .stand {
+              width: 100px;
+              height: 20px;
+              background: #555;
+              margin: 10px auto;
+              border-radius: 10px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          }
+          
+          .keyboard {
+              width: 80%;
+              height: 40px;
+              background: #444;
+              margin: 10px auto;
+              border-radius: 5px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+              display: grid;
+              grid-template-columns: repeat(12, 1fr);
+              gap: 5px;
+              padding: 5px;
+          }
+          
+          .keyboard div {
+              background: #555;
+              border-radius: 2px;
+              height: 10px;
+          }
+          </style>
+          <div class="device tablet">
+            <div class="screen">タブレット画面</div>
+          </div>
+          
+          <style>
+          .tablet {
+              width: 300px;
+              height: 400px;
+              background: #444;
+              border: 15px solid #666;
+              border-radius: 20px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+              position: relative;
+          }
+          
+          .tablet .screen {
+              width: calc(100% - 30px);
+              height: calc(100% - 30px);
+              background: linear-gradient(145deg, #4CAF50, #81C784);
+              margin: 15px auto;
+              border-radius: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1.5em;
+              font-weight: bold;
+              text-align: center;
+          }
+          </style>
+          
+    </div>
+</body>
+</html>
